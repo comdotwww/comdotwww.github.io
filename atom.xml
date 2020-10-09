@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://moeau.com/"/>
-  <updated>2020-10-09T08:08:16.044Z</updated>
+  <updated>2020-10-09T10:20:35.583Z</updated>
   <id>https://moeau.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://moeau.com/post/link.html"/>
+    <id>https://moeau.com/post/link.html</id>
+    <published>2020-10-09T10:20:35.583Z</published>
+    <updated>2020-10-09T10:20:35.583Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -34,6 +48,54 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>TensorFlow入门(一) - mnist手写数字识别(网络搭建)</title>
+    <link href="https://moeau.com/post/tensorflow-mnist-simplest.html"/>
+    <id>https://moeau.com/post/tensorflow-mnist-simplest.html</id>
+    <published>2020-10-09T02:10:10.000Z</published>
+    <updated>2020-10-09T10:39:49.973Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇文章是整个 TensorFlow入门-mnist手写数字识别系列的第一篇，主要介绍了如何从0开始用tensorflow搭建最简单的网络进行训练。</p><p>··· 省略</p>]]></content>
+    
+    <summary type="html">
+    
+      TensorFlow 入门系列文章，mnist手写数字识别(网络搭建)。
+    
+    </summary>
+    
+      <category term="TensorFlow教程" scheme="https://moeau.com/categories/TensorFlow%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="机器学习" scheme="https://moeau.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="tensorflow" scheme="https://moeau.com/tags/tensorflow/"/>
+    
+      <category term="mnist" scheme="https://moeau.com/tags/mnist/"/>
+    
+      <category term="Python" scheme="https://moeau.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于我</title>
+    <link href="https://moeau.com/post/about.html"/>
+    <id>https://moeau.com/post/about.html</id>
+    <published>2017-07-03T03:51:24.000Z</published>
+    <updated>2020-10-09T10:32:37.083Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h2><p>······</p>]]></content>
+    
+    <summary type="html">
+    
+      明杰的小站，致力于分享有趣的内容。
+    
+    </summary>
+    
+    
+      <category term="关于我" scheme="https://moeau.com/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
     
   </entry>
   

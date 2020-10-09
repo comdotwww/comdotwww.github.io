@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://moeau.com/post/tensorflow-mnist-simplest.html</loc>
+    
+    <lastmod>2020-10-09T10:39:49.973Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/post/about.html</loc>
+    
+    <lastmod>2020-10-09T10:32:37.083Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/series/index.html</loc>
+    
+    <lastmod>2020-10-09T10:31:13.263Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/tags/index.html</loc>
+    
+    <lastmod>2020-10-09T10:30:57.214Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/archives/index.html</loc>
+    
+    <lastmod>2020-10-09T10:30:39.345Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/404.html</loc>
+    
+    <lastmod>2020-10-09T10:29:16.419Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/post/link.html</loc>
+    
+    <lastmod>2020-10-09T10:20:35.583Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://moeau.com/post/hello-world.html</loc>
     
     <lastmod>2020-10-09T08:08:16.044Z</lastmod>

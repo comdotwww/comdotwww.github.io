@@ -14,17 +14,17 @@
   <!-- if page has tags, then add tags to keyword -->
   
   
-  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,">
+  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,机器学习,tensorflow,mnist,Python,">
   <!-- page.description has higher priority -->
-  <meta name="description" content="明杰的记录本，致力于分享有趣的内容。">
+  <meta name="description" content="TensorFlow 入门系列文章，mnist手写数字识别(网络搭建)。">
   <link rel="shortcut icon" href="/img/icon.png">
   <title>
     
-    Hello World | 明杰
+    TensorFlow入门(一) - mnist手写数字识别(网络搭建) | 明杰
     
   </title>
 
-  <link rel="canonical" href="/post/hello-world.html">
+  <link rel="canonical" href="/post/tensorflow-mnist-simplest.html">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/markdown.css">
@@ -84,7 +84,7 @@
             <ul>
                 
                 
-                <li class="gkt-cate-name float-left ">
+                <li class="gkt-cate-name float-left active">
                     <a class="float-left" href="/post/tensorflow-mnist-simplest.html">TensorFlow</a>
                     
                 </li>
@@ -126,33 +126,42 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
-        <a class="float-left" href="/post/tensorflow-mnist-simplest.html"><i class="u-arrow-left"></i></a>
+        <a class="float-left" href="/post/about.html"><i class="u-arrow-left"></i></a>
         
         
-        <a class="float-right" href="/post/link.html"><i class="u-arrow-right"></i></a>
+        <a class="float-right" href="/post/hello-world.html"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> Hello World </h1>
+        <h1> TensorFlow入门(一) - mnist手写数字识别(网络搭建) </h1>
 
         
 
         
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> TensorFlow教程系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/tensorflow-mnist-simplest.html">TensorFlow入门(一) - mnist手写数字识别(网络搭建)</a>
+                    <span class="post-item-date">(Oct 9, 2020)</span>
+                </li>
+                
+            </ul>
+        </div>
         
         
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <blockquote>
+            <p>源代码/数据集已上传到
+                <a href="https://github.com/geektutu/tensorflow-tutorial-samples" target="_blank" rel="noopener">
+                    Github - tensorflow-tutorial-samples
+                </a>
+            </p>
+        </blockquote>
+        
+        
+        <p>这篇文章是整个 TensorFlow入门-mnist手写数字识别系列的第一篇，主要介绍了如何从0开始用tensorflow搭建最简单的网络进行训练。</p>
+<p>··· 省略</p>
 
         <script src="/js/qrious.min.js"></script>
 
@@ -174,13 +183,22 @@
         <div>
             
             <p>
+                <span>专题: </span>
+                
+                <a href="/series/#TensorFlow教程">
+                    <code key="TensorFlow教程" class="post-label">TensorFlow教程</code>
+                </a>
+                
+            </p>
+            
+            <p>
                 <span>本文发表于 2020-10-09，最后修改于 2020-10-09。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名<strong>「 <a
-                        href="/post/hello-world.html">moeau.com</a>
+                        href="/post/tensorflow-mnist-simplest.html">moeau.com</a>
                     」</strong>，也可搜索<strong>「 明杰的记录本 」</strong>找到我。
             </p>
             
@@ -199,10 +217,10 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
-    <a class="float-left" href="/post/tensorflow-mnist-simplest.html">上一篇 « TensorFlow入门(一) - mnist手写数字识别(网络搭建)</a>
+    <a class="float-left" href="/post/about.html">上一篇 « 关于我</a>
     
     
-    <a class="float-right" href="/post/link.html">下一篇 » </a>
+    <a class="float-right" href="/post/hello-world.html">下一篇 » Hello World</a>
     
 </p>
     </article>
@@ -625,6 +643,61 @@
 </div></section>
         
         
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>TensorFlow教程</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/tensorflow-mnist-simplest.html"
+                        class="gkt-sidebar-active">mnist手写数字识别(网络搭建)</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
         
         <section class="box-shadow">
             <strong>最近的文章</strong>
@@ -640,10 +713,6 @@
                 
                 <li>
                     <a href="/post/tensorflow-mnist-simplest.html">mnist手写数字识别(网络搭建)</a>
-                </li>
-                
-                <li>
-                    <a href="/post/about.html">关于我</a>
                 </li>
                 
             </ul>
