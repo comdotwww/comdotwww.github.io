@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://moeau.com/"/>
-  <updated>2020-10-09T10:20:35.583Z</updated>
+  <updated>2020-11-12T15:48:34.478Z</updated>
   <id>https://moeau.com/</id>
   
   <author>
@@ -17,16 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://moeau.com/post/link.html"/>
-    <id>https://moeau.com/post/link.html</id>
-    <published>2020-10-09T10:20:35.583Z</published>
-    <updated>2020-10-09T10:20:35.583Z</updated>
+    <title>TCP/IP模型和ISO/OSI参考模型的比较</title>
+    <link href="https://moeau.com/post/TCP_IP_OSI_difference.html"/>
+    <id>https://moeau.com/post/TCP_IP_OSI_difference.html</id>
+    <published>2020-11-12T15:19:41.634Z</published>
+    <updated>2020-11-12T15:48:34.478Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="相似之处"><a href="#相似之处" class="headerlink" title="相似之处"></a>相似之处</h3><ol><li>二者都采取分层的体系结构，且分层的功能也大体相似。</li><li>二者都是基于独立的协议栈的概念。</li><li>二者都可以解决异构网络的互联，实现世界上不同厂家生产的计算机之间的通信。</li></ol><p><img src="TCP_IP_OSI_difference/TCPIPISO.png" alt="TP/IP模型与OSI模型的层次对应关系"></p><h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ol><li>OSI参考模型的最大贡献就是精确地定义了三个主要概念：服务、协议和接口，而TCP/IP模型在这三个概念上却没有明确区分。</li><li>OSI参考模型产生在协议发明之前，没有偏向任何特定的协议，通用性良好。但设计者在协议方面没有太多经验，不知把哪些功能放到哪一层更好。TCP/IP协议正好相反，首先出现的是协议，模型实际上是对已有协议的描述，因此不会出现协议不能匹配模型的情况，但该模型不适合任何其他非TCP/IP协议栈。</li><li>TCP/IP模型在设计之初就考虑到了多种异构网的互联问题，并将网际切议（IP）作为一个单独的重要层次。OSI参考模型最初只考虑到用一种标准的公用数据网将各种不同的系统互联。OSI参考模型认识到网际协议IP的重要性后，只好在网络层中划分一个子层来完成类似于TCP/IP模型中的IP功能。</li><li>OSI参考模型在网络层支持无连接和面向链接的通信，但在传输层仅有面向连接的通信。。。而TCP/IP模型认为可靠性是端到端的问题，因此它在网际层仅有一种无连接的通信模式，但传输层支持无连接和面向连接两种模式。</li></ol>]]></content>
     
     <summary type="html">
     
+      TCP/IP模型 ISO/OSI参考模型 异同点
+    
     </summary>
     
+      <category term="计算机网络" scheme="https://moeau.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="计算机网络" scheme="https://moeau.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="TCP/IP" scheme="https://moeau.com/tags/TCP-IP/"/>
+    
+      <category term="ISO/OSI" scheme="https://moeau.com/tags/ISO-OSI/"/>
+    
+      <category term="物理层" scheme="https://moeau.com/tags/%E7%89%A9%E7%90%86%E5%B1%82/"/>
     
   </entry>
   
@@ -56,7 +70,7 @@
     <link href="https://moeau.com/post/tensorflow-mnist-simplest.html"/>
     <id>https://moeau.com/post/tensorflow-mnist-simplest.html</id>
     <published>2020-10-09T02:10:10.000Z</published>
-    <updated>2020-10-09T11:09:44.804Z</updated>
+    <updated>2020-11-12T15:27:29.584Z</updated>
     
     <content type="html"><![CDATA[<p>测试用的文章</p><p>··· 省略</p>]]></content>
     

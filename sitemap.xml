@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://moeau.com/post/TCP_IP_OSI_difference.html</loc>
+    
+    <lastmod>2020-11-12T15:48:34.478Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://moeau.com/post/tensorflow-mnist-simplest.html</loc>
     
-    <lastmod>2020-10-09T11:09:44.804Z</lastmod>
+    <lastmod>2020-11-12T15:27:29.584Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://moeau.com/archives/index.html</loc>
     
     <lastmod>2020-10-09T10:30:39.345Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://moeau.com/post/link.html</loc>
-    
-    <lastmod>2020-10-09T10:20:35.583Z</lastmod>
     
   </url>
   

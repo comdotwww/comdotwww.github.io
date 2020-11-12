@@ -14,17 +14,17 @@
   <!-- if page has tags, then add tags to keyword -->
   
   
-  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,">
+  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,计算机网络,TCP/IP,ISO/OSI,物理层,">
   <!-- page.description has higher priority -->
-  <meta name="description" content="明杰的记录本，致力于分享有趣的内容。">
+  <meta name="description" content="TCP/IP模型 ISO/OSI参考模型 异同点">
   <link rel="shortcut icon" href="/icon/favicon.ico">
   <title>
     
-    明杰的记录本
+    TCP/IP模型和ISO/OSI参考模型的比较 | 明杰
     
   </title>
 
-  <link rel="canonical" href="/post/link.html">
+  <link rel="canonical" href="/post/TCP_IP_OSI_difference.html">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/markdown.css">
@@ -89,6 +89,11 @@
                     
                 </li>
                 
+                <li class="gkt-cate-name float-left active">
+                    <a class="float-left" href="/post/TCP_IP_OSI_difference.html">计算机网络</a>
+                    
+                </li>
+                
             </ul>
         </nav>
     </div>
@@ -131,14 +136,38 @@
         
     </div>
     <article class="col-xs-12">
-        <h1>  </h1>
+        <h1> TCP/IP模型和ISO/OSI参考模型的比较 </h1>
 
         
 
         
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> 计算机网络系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/TCP_IP_OSI_difference.html">TCP/IP模型和ISO/OSI参考模型的比较</a>
+                    <span class="post-item-date">(Nov 12, 2020)</span>
+                </li>
+                
+            </ul>
+        </div>
         
         
         
+        <h3 id="相似之处"><a href="#相似之处" class="headerlink" title="相似之处"></a>相似之处</h3><ol>
+<li>二者都采取分层的体系结构，且分层的功能也大体相似。</li>
+<li>二者都是基于独立的协议栈的概念。</li>
+<li>二者都可以解决异构网络的互联，实现世界上不同厂家生产的计算机之间的通信。</li>
+</ol>
+<p><img src="TCP_IP_OSI_difference/TCPIPISO.png" alt="TP/IP模型与OSI模型的层次对应关系"></p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><ol>
+<li>OSI参考模型的最大贡献就是精确地定义了三个主要概念：服务、协议和接口，而TCP/IP模型在这三个概念上却没有明确区分。</li>
+<li>OSI参考模型产生在协议发明之前，没有偏向任何特定的协议，通用性良好。但设计者在协议方面没有太多经验，不知把哪些功能放到哪一层更好。TCP/IP协议正好相反，首先出现的是协议，模型实际上是对已有协议的描述，因此不会出现协议不能匹配模型的情况，但该模型不适合任何其他非TCP/IP协议栈。</li>
+<li>TCP/IP模型在设计之初就考虑到了多种异构网的互联问题，并将网际切议（IP）作为一个单独的重要层次。OSI参考模型最初只考虑到用一种标准的公用数据网将各种不同的系统互联。OSI参考模型认识到网际协议IP的重要性后，只好在网络层中划分一个子层来完成类似于TCP/IP模型中的IP功能。</li>
+<li>OSI参考模型在网络层支持无连接和面向链接的通信，但在传输层仅有面向连接的通信。。。而TCP/IP模型认为可靠性是端到端的问题，因此它在网际层仅有一种无连接的通信模式，但传输层支持无连接和面向连接两种模式。</li>
+</ol>
+
         <script src="/js/qrious.min.js"></script>
 
 <div class="hidden-xs col-xs-12 text-center">
@@ -159,13 +188,22 @@
         <div>
             
             <p>
-                <span>本文发表于 2020-10-09，最后修改于 2020-10-09。</span>
+                <span>专题: </span>
+                
+                <a href="/series/#计算机网络">
+                    <code key="计算机网络" class="post-label">计算机网络</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2020-11-12，最后修改于 2020-11-12。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名<strong>「 <a
-                        href="/post/link.html">moeau.com</a>
+                        href="/post/TCP_IP_OSI_difference.html">moeau.com</a>
                     」</strong>，也可搜索<strong>「 明杰的记录本 」</strong>找到我。
             </p>
             
@@ -332,21 +370,40 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/undefined')"></div>
+    <div class="post-img" style="background-image: url('/post/TCP_IP_OSI_difference/TCPIPISO.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
                 
                 
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#计算机网络"
+                    title="计算机网络">计算机网络</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#TCP/IP"
+                    title="TCP/IP">TCP/IP</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#ISO/OSI"
+                    title="ISO/OSI">ISO/OSI</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#物理层"
+                    title="物理层">物理层</a>
+                <span>/</span>
+                
+                
             </div>
-            <a href="/post/link.html" class="title">
-                Untitled
+            <a href="/post/TCP_IP_OSI_difference.html" class="title">
+                TCP/IP模型和ISO/OSI参考模型的比较
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2020-10-09，</span>
-                    <span class="hidden-xs">全文0字，</span>
-                    <span>阅读约0分钟</span>
+                    <span>发表于2020-11-12，</span>
+                    <span class="hidden-xs">全文860字，</span>
+                    <span>阅读约3分钟</span>
                 </small>
             </p>
         </div>
@@ -427,8 +484,17 @@
 </style>
 <div id="featured-tag">
     
-    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
-        rel="1">#关于我 (1) </a>
+    <a class="post-tag-item" href="/tags/#计算机网络" title="计算机网络"
+        rel="1">#计算机网络 (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#TCP/IP" title="TCP/IP"
+        rel="1">#TCP/IP (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#ISO/OSI" title="ISO/OSI"
+        rel="1">#ISO/OSI (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#物理层" title="物理层"
+        rel="1">#物理层 (1) </a>
     
     <a class="post-tag-item" href="/tags/#机器学习" title="机器学习"
         rel="1">#机器学习 (1) </a>
@@ -441,6 +507,9 @@
     
     <a class="post-tag-item" href="/tags/#Python" title="Python"
         rel="1">#Python (1) </a>
+    
+    <a class="post-tag-item" href="/tags/#关于我" title="关于我"
+        rel="1">#关于我 (1) </a>
     
 </div>
     </div>
@@ -587,10 +656,10 @@
             <number class="number">4</number><span>文章</span>
         </a>
         <a href="/series" class="col-xs-4 middle">
-            <number class="number">1</number><span>专题</span>
+            <number class="number">2</number><span>专题</span>
         </a>
         <a href="/tags" class="col-xs-4">
-            <number class="number">5</number><span>标签</span>
+            <number class="number">9</number><span>标签</span>
         </a>
     </nav>
 
@@ -608,13 +677,70 @@
 </div></section>
         
         
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>计算机网络</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/TCP_IP_OSI_difference.html"
+                        class="gkt-sidebar-active">TCP/IP模型和ISO/OSI参考模型的比较</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
         
         <section class="box-shadow">
             <strong>最近的文章</strong>
             <ul>
                 
                 <li>
-                    <a href="/post/link.html"></a>
+                    <a href="/post/TCP_IP_OSI_difference.html">TCP/IP模型和ISO/OSI参考模型的比较</a>
                 </li>
                 
                 <li>
@@ -623,10 +749,6 @@
                 
                 <li>
                     <a href="/post/tensorflow-mnist-simplest.html">mnist手写数字识别(网络搭建)</a>
-                </li>
-                
-                <li>
-                    <a href="/post/about.html">关于我</a>
                 </li>
                 
             </ul>
