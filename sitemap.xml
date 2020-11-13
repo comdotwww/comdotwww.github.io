@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://moeau.com/post/TCP_IP_OSI_difference.html</loc>
+    <loc>https://moeau.com/post/Nairn's_criterion_and_Shannon's_theorem.html</loc>
     
-    <lastmod>2020-11-12T15:48:34.478Z</lastmod>
+    <lastmod>2020-11-13T16:20:23.739Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/post/Interaction_of_information_between_the_communicating_parties.html</loc>
+    
+    <lastmod>2020-11-13T16:19:30.197Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://moeau.com/post/tensorflow-mnist-simplest.html</loc>
     
-    <lastmod>2020-11-12T15:27:29.584Z</lastmod>
+    <lastmod>2020-11-13T15:32:42.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://moeau.com/post/TCP_IP_OSI_difference.html</loc>
+    
+    <lastmod>2020-11-13T15:32:19.643Z</lastmod>
     
   </url>
   

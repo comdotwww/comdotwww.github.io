@@ -14,17 +14,17 @@
   <!-- if page has tags, then add tags to keyword -->
   
   
-  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,关于我,">
+  <meta name="keywords" content="明杰,明杰的博客,明杰的小站,明杰的记录本,计算机网络,物理层,香农定理,">
   <!-- page.description has higher priority -->
-  <meta name="description" content="明杰的小站，致力于分享有趣的内容。">
+  <meta name="description" content="奈氏准则和香农定理">
   <link rel="shortcut icon" href="/icon/favicon.ico">
   <title>
     
-    关于我 | 明杰
+    奈氏准则和香农定理 | 明杰
     
   </title>
 
-  <link rel="canonical" href="/post/about.html">
+  <link rel="canonical" href="/post/Nairn&#39;s_criterion_and_Shannon&#39;s_theorem.html">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/markdown.css">
@@ -89,7 +89,7 @@
                     
                 </li>
                 
-                <li class="gkt-cate-name float-left ">
+                <li class="gkt-cate-name float-left active">
                     <a class="float-left" href="/post/TCP_IP_OSI_difference.html">计算机网络</a>
                     
                 </li>
@@ -131,19 +131,75 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
+        <a class="float-left" href="/post/Interaction_of_information_between_the_communicating_parties.html"><i class="u-arrow-left"></i></a>
         
-        <a class="float-right" href="/post/tensorflow-mnist-simplest.html"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> 关于我 </h1>
+        <h1> 奈氏准则和香农定理 </h1>
 
         
 
         
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> 计算机网络系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/TCP_IP_OSI_difference.html">TCP/IP模型和ISO/OSI参考模型的比较</a>
+                    <span class="post-item-date">(Nov 12, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Interaction_of_information_between_the_communicating_parties.html">通信双方信息交互方式</a>
+                    <span class="post-item-date">(Nov 13, 2020)</span>
+                </li>
+                
+                <li>
+                    <a href="/post/Nairn's_criterion_and_Shannon's_theorem.html">奈氏准则和香农定理</a>
+                    <span class="post-item-date">(Nov 13, 2020)</span>
+                </li>
+                
+            </ul>
+        </div>
         
         
-        <h2 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h2><p>······</p>
+        
+        <h2 id="奈氏准则"><a href="#奈氏准则" class="headerlink" title="奈氏准则"></a>奈氏准则</h2><p>奈奎斯特(Nyquist)定理又称奈氏准则，它指出在理想低通（没有噪声、带宽有限）的信道中，极限码元传输率为2W波特，其中W是理想低通信道的带宽，单位为Hz。若用V表示每个码元离散电平的数目（码元的离散电平数目是指有多少种不同的码元，比如有16种不同的码元，则需要4位二进制位，因此数据传输率是码元传输率的4倍），则极限数据率为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">理想低通信道下的极限数据传输率＝2Wlog2V （单位为b/s)</span><br></pre></td></tr></table></figure>
+
+<p>对于奈氏准则，可以得出以下结论：</p>
+<ol>
+<li>在任何信道中，码元传输的速率是有上限的。若传输速率超过此上限，就会出现严重的码间串扰问题（指在接收端收到的信号波形失去了码元之间的清晰界限）， 使得接收端不 可能完全正确识别码元。</li>
+<li>信道的频带越宽（即通过的信号高频分量越多），就可用更高的速率进行码元的有效传输。</li>
+<li>奈氏准则给出了码元传输速率的限制，但并未对信息传输速率给出限制，即未对一个码元可以对应多少个二进制位给出限制。</li>
+</ol>
+<p>由于码元的传输速率受奈氏准则的制约，所以要提高数据的传输速率，就必须设法使每个码元携带更多个比特的信息量，此时就需要采用多元制的调制方法。</p>
+<h2 id="香农定理"><a href="#香农定理" class="headerlink" title="香农定理"></a>香农定理</h2><p>香农(Shannon)定理给出了带宽受限且有高斯白噪声干扰的信道的极限数据传输率，当用此速率进行传输时，可以做到不产生误差。香衣定理定义为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">信道的极限数据传输率＝W * log2 (l + S/N) (单位为b/s)</span><br></pre></td></tr></table></figure>
+
+<p>式中，W 为信道的带宽，S 为信道所传输信号的平均功率，N 为信道内部的高斯噪声功率。S/N 为信噪比，即信号的平均功率与噪声的平均功率之比，信噪比＝10log10(S/N)（单位为dB)，例如如当S/N=IO 时，信噪比为lOdB, 而当S/N=1000 时， 信噪比为30dB。</p>
+<p>对千香农定理，可以得出以下结论：</p>
+<ol>
+<li>信道的带宽或信道中的信噪比越大，信息的极限传输速率越高。</li>
+<li>对一定的传输带宽和一定的信噪比，信息传输速率的上限是确定的。</li>
+<li>只要信息的传输速率低于信道的极限传输速率，就能找到某种方法来实现无差错的传输。</li>
+<li>香农定理得出的是极限信息传输速率，实际信道能达到的传输速率要比它低不少。</li>
+</ol>
+<p>从香农定理可以看出， 若信道带宽W或信噪比S/N没有上限（实际信道当然不可能这样），则信道的极限信息传输速率也没有上限。<br>奈氏准则只考虑了带宽与极限码元传输速率的关系，而香农定理不仅考虑到了带宽，也考虑到了信噪比。这从另一个侧面表明，一个码元对应的二进制位数是有限的。</p>
+<blockquote>
+<p>注：信噪比为 S/N, 为什么还要取对数 l0log10(S/N)？</p>
+<ol>
+<li>数字形式表示，即一般数值。如噪声功率为1, 信号功率为100, 信噪比为<code>100/1 = 100</code></li>
+<li>以分贝形式表示，同样还是上面这些数字，以分贝形式表示的信噪比为<code>1Olog1o(S/N) = 10 * log10 100 = 20 dB</code></li>
+</ol>
+<p>两者的区别在于，前者（数值）是没有单位的，后者必须加 <code>dB</code>, 代表分贝。两者数值上等价。采用分贝表示的原因是：很多时候，信号要比噪声强得多，比如信号比噪声强 10 亿倍，如果用数值表示的话，那么l后面有9个0, 很容易丢失一个0。如果用分贝表示，那么仅为90dB, 因此要简单得多，而且不容易出错。分贝对千表示特别大或特别小的数值极为有利，这种表示方式在电子通信领域用途很广。</p>
+</blockquote>
+<h2 id="奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？"><a href="#奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？" class="headerlink" title="奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？"></a>奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？</h2><p>奈氏准则指出，码元传输的速率是受限的，不能任意提高，否则在接收端就无法正确判定码元所携带的比特是1还是0 （因为存在码元之间的相互干扰）。</p>
+<p>奈氏准则是在理想条件下推导出来的。在实际条件下， 最高码元传输速率要比理想条件下得出的数值小很多。 电信技术人员的任务就是要在实际条件下，寻找出较好的传输码元波形，将比特转换为较为合适的传输信号。</p>
+<p>需要注意的是，奈氏准则并未限制信息传输速率(b/s)。要提高信息传输速率，就必须使每个传输的码元能够代表许多比特的信息， 这就需要有很好的编码技术。 但码元所载的比特数确定 后，信道的极限数据率也就确定了。</p>
+<p>香农定理给出了信息传输速率的极限， 即对于一定的传输带宽（以赫兹为单位） 和一定的信噪比，信息传输速率的上限就确定了，这个极限是不能突破的。要想提高信息的传输速率，要么必须设法提高传输线路的带宽， 要么必须设法提高所传信号的信噪比，此外没有其他任何办法。</p>
+<p>香农定理告诉我们， 若要得到无限大的信息传输速率， 只有两个办法： 要么使用无限大的传输带宽（这显然不可能）， 要么使信号的信噪比无限大， 即采用没有噪声的传输信道或使用无限 大的发送功率（当然这些也都不可能）。 注意， 奈氏准则和香农定理中 “带宽”的单位都是 Hz。</p>
 
         <script src="/js/qrious.min.js"></script>
 
@@ -165,13 +221,22 @@
         <div>
             
             <p>
-                <span>本文发表于 2017-07-03，最后修改于 2020-10-09。</span>
+                <span>专题: </span>
+                
+                <a href="/series/#计算机网络">
+                    <code key="计算机网络" class="post-label">计算机网络</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2020-11-13，最后修改于 2020-11-14。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名<strong>「 <a
-                        href="/post/about.html">moeau.com</a>
+                        href="/post/Nairn&#39;s_criterion_and_Shannon&#39;s_theorem.html">moeau.com</a>
                     」</strong>，也可搜索<strong>「 明杰的记录本 」</strong>找到我。
             </p>
             
@@ -190,8 +255,8 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
+    <a class="float-left" href="/post/Interaction_of_information_between_the_communicating_parties.html">上一篇 « 通信双方信息交互方式</a>
     
-    <a class="float-right" href="/post/tensorflow-mnist-simplest.html">下一篇 » TensorFlow入门(一) - mnist手写数字识别(网络搭建)</a>
     
 </p>
     </article>
@@ -338,7 +403,7 @@
         <h3>推荐阅读</h3>
         
         <div class="post-preview">
-    <div class="post-img" style="background-image: url('/post/TCP_IP_OSI_difference/TCPIPISO.png')"></div>
+    <div class="post-img" style="background-image: url('/post/Interaction_of_information_between_the_communicating_parties/city-4679928_640.png')"></div>
     <div class="post-info">
         <div class="post-info-center">
             <div class="hidden-xs">
@@ -350,49 +415,27 @@
                     title="计算机网络">计算机网络</a>
                 <span>/</span>
                 
+                <a class="text-gray" href="/tags/#通信"
+                    title="通信">通信</a>
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#信息交互"
+                    title="信息交互">信息交互</a>
+                <span>/</span>
+                
                 <a class="text-gray" href="/tags/#物理层"
                     title="物理层">物理层</a>
                 <span>/</span>
                 
-                <a class="text-gray" href="/tags/#TCP/IP"
-                    title="TCP/IP">TCP/IP</a>
-                <span>/</span>
-                
-                <a class="text-gray" href="/tags/#ISO/OSI"
-                    title="ISO/OSI">ISO/OSI</a>
-                <span>/</span>
-                
                 
             </div>
-            <a href="/post/TCP_IP_OSI_difference.html" class="title">
-                TCP/IP模型和ISO/OSI参考模型的比较
+            <a href="/post/Interaction_of_information_between_the_communicating_parties.html" class="title">
+                通信双方信息交互方式
             </a>
             <p class="text-gray">
                 <small>
-                    <span>发表于2020-11-12，</span>
-                    <span class="hidden-xs">全文860字，</span>
-                    <span>阅读约3分钟</span>
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-        
-        <div class="post-preview">
-    <div class="post-img" style="background-image: url('/undefined')"></div>
-    <div class="post-info">
-        <div class="post-info-center">
-            <div class="hidden-xs">
-                
-                
-            </div>
-            <a href="/post/hello-world.html" class="title">
-                Hello World
-            </a>
-            <p class="text-gray">
-                <small>
-                    <span>发表于2020-10-09，</span>
-                    <span class="hidden-xs">全文838字，</span>
+                    <span>发表于2020-11-13，</span>
+                    <span class="hidden-xs">全文642字，</span>
                     <span>阅读约3分钟</span>
                 </small>
             </p>
@@ -423,6 +466,35 @@
                     <span>发表于2020-10-09，</span>
                     <span class="hidden-xs">全文310字，</span>
                     <span>阅读约2分钟</span>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+        
+        <div class="post-preview">
+    <div class="post-img" style="background-image: url('/undefined')"></div>
+    <div class="post-info">
+        <div class="post-info-center">
+            <div class="hidden-xs">
+                
+                
+                <span>/</span>
+                
+                <a class="text-gray" href="/tags/#关于我"
+                    title="关于我">关于我</a>
+                <span>/</span>
+                
+                
+            </div>
+            <a href="/post/about.html" class="title">
+                关于我
+            </a>
+            <p class="text-gray">
+                <small>
+                    <span>发表于2017-07-03，</span>
+                    <span class="hidden-xs">全文104字，</span>
+                    <span>阅读约1分钟</span>
                 </small>
             </p>
         </div>
@@ -645,6 +717,75 @@
 </div></section>
         
         
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>计算机网络</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/TCP_IP_OSI_difference.html"
+                        class="">TCP/IP模型和ISO/OSI参考模型的比较</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Interaction_of_information_between_the_communicating_parties.html"
+                        class="">通信双方信息交互方式</a>
+                    
+                </li>
+                
+                <li>
+                    <a href="/post/Nairn's_criterion_and_Shannon's_theorem.html"
+                        class="gkt-sidebar-active">奈氏准则和香农定理</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#奈氏准则"><span class="toc-nav-text">奈氏准则</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#香农定理"><span class="toc-nav-text">香农定理</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？"><span class="toc-nav-text">奈氏准则和香农定理的主要区别是什么？这两个定理对数据通信的意义是什么？</span></a></li></ol>
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
         
         <section class="box-shadow">
             <strong>最近的文章</strong>
@@ -660,18 +801,6 @@
                 
                 <li>
                     <a href="/post/TCP_IP_OSI_difference.html">TCP/IP模型和ISO/OSI参考模型的比较</a>
-                </li>
-                
-                <li>
-                    <a href="/post/hello-world.html">Hello World</a>
-                </li>
-                
-                <li>
-                    <a href="/post/tensorflow-mnist-simplest.html">mnist手写数字识别(网络搭建)</a>
-                </li>
-                
-                <li>
-                    <a href="/post/about.html">关于我</a>
                 </li>
                 
             </ul>
