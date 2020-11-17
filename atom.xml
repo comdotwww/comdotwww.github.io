@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://moeau.com/"/>
-  <updated>2020-11-13T16:20:23.739Z</updated>
+  <updated>2020-11-16T14:08:47.940Z</updated>
   <id>https://moeau.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://moeau.com/post/%E7%AD%BE%E5%88%B0.html"/>
+    <id>https://moeau.com/post/签到.html</id>
+    <published>2020-11-16T14:08:14.516Z</published>
+    <updated>2020-11-16T14:08:47.940Z</updated>
+    
+    <content type="html"><![CDATA[{"code":0,"data":{"area":[{"code":10,"distance":400,"id":"608","latitude":"30.50199","longitude":"114.390399","name":"武昌校区","school":"武汉工程大学"},{"code":11,"distance":650,"id":"609","latitude":"30.462528","longitude":"114.432971","name":"流芳校区","school":"武汉工程大学"}],"back":1,"city":"武汉市","country":"中国","date":"2020-11-16","district":"江夏区","heat":"36.0","id":"248523927180881920","location":1,"province":"湖北省","state":2,"street":"光谷一路","titles":[{"heatOptions":[{"id":"1","option":"无下列情况,身体健康","select":1,"seq":0,"titleId":"1"},{"id":"2","option":"咳嗽","select":0,"seq":1,"titleId":"1"},{"id":"3","option":"乏力","select":0,"seq":2,"titleId":"1"},{"id":"4","option":"呼吸困难","select":0,"seq":3,"titleId":"1"},{"id":"21","option":"与新冠肺炎相关的其他症状，如流涕、咽痛、肌痛、腹泻等","select":0,"seq":4,"titleId":"1"}],"id":"1","seq":0,"title":"你当前的健康状况是？","type":2}],"township":"佛祖岭街道"}}]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        {&quot;code&quot;:0,&quot;data&quot;:{&quot;area&quot;:[{&quot;code&quot;:10,&quot;distance&quot;:400,&quot;id&quot;:&quot;608&quot;,&quot;latitude&quot;:&quot;30.50199&quot;,&quot;longitude&quot;:&quot;114.390399&quot;,&quot;name&quot;:&quot;武昌校区&quot;,&quot;school&quot;:&quot;武汉工程大学
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>奈氏准则和香农定理</title>
