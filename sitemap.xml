@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://moeau.com/tags/index.html</loc>
+    
+    <lastmod>2020-11-25T02:28:57.246Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://moeau.com/config/RUinCampus/RUinCampus.json</loc>
     
     <lastmod>2020-11-25T02:18:02.559Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://moeau.com/series/index.html</loc>
     
     <lastmod>2020-10-09T10:31:13.263Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://moeau.com/tags/index.html</loc>
-    
-    <lastmod>2020-10-09T10:30:57.214Z</lastmod>
     
   </url>
   
